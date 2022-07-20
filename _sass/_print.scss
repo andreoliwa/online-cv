@@ -12,6 +12,7 @@
   }
   .main-wrapper .time {
     float: right;
+        color: black !important;
     -webkit-print-color-adjust: exact;
   }
   .main-wrapper .section {
@@ -70,8 +71,14 @@
     padding-left: 5px;
   }
 
+   .fa-inverse,
+   .fa-inverse:after,
+   .fa-inverse:before {
+     color: #ffffff !important;
+   }
+
   // Don't expand links for email, phone, map
   a.dont-print:after {
     content: "";
-  }
+   }
 }

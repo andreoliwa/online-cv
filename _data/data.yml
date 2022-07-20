@@ -14,10 +14,14 @@ sidebar:
   # Sidebar links
   email: andreoliwa@gmail.com
   phone: +49 157 8451-8364
+  timezone: Europe/Berlin timezone
+  citizenship: Italian/Brazilian citizenship
   city: 10435 Berlin, Germany
   website: #do not add http://
   linkedin: andreoliwa
+  xing: # andreoliwa
   github: andreoliwa
+  telegram: # add your nickname without '@' sign
   gitlab: # andreoliwa
   bitbucket: # andreoliwa
   twitter: # "@andreoliwa"
@@ -25,6 +29,7 @@ sidebar:
   stack-share: andreoliwa/my-stack
   codewars:
   goodreads: # Number-Username, e.g. 123456-alandoe
+  pdf: # http://www.africau.edu/images/default/sample.pdf
 
   languages:
     - idiom: English

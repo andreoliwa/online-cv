@@ -3,7 +3,9 @@
 # Site Settings
 title: Augusto Andreoli - Resume
 url: "http://andreoliwa.github.io"
-baseurl: "/online-cv" #change it according to your repository name
+#change it according to your repository name
+# disabling since we are using a custom domain
+#baseurl: '/online-cv'
 description: A beautiful Jekyll theme for creating resume
 
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
@@ -21,7 +23,7 @@ sass:
 # Build settings
 compress-site: yes
 
-encoding: "utf-8"
+encoding: "UTF-8"
 compress_html: # - http://jch.penibelst.de/
   clippings: all
   ignore:
