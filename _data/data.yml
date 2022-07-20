@@ -8,14 +8,14 @@ sidebar:
 
   # Profile information
   name: Augusto Andreoli
-  tagline: Python Engineer
-  # avatar: profile.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  tagline: Python Backend Developer
+  avatar: profile.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
   email: andreoliwa@gmail.com
   phone: +49 157 8451-8364
   timezone: Europe/Berlin timezone
-  citizenship: Italian/Brazilian citizenship
+  citizenship: Italian/Brazilian dual citizenship
   city: 10435 Berlin, Germany
   website: #do not add http://
   linkedin: andreoliwa
@@ -56,14 +56,15 @@ sidebar:
 career-profile:
   title: Summary
   summary: |
-    I’m a backend engineer with over 10 years of experience in software development.
-    Proficient in web development, RESTful APIs, object-oriented design, database modelling (RDBMS and NoSQL), conceptual and requirements analysis.
-    I’m easy to learn, self-taught, organised, detail-oriented.
+    I’m a backend developer with over 10 years of experience in software development: web development, RESTful APIs, object-oriented design, database modelling...
+    I'm an easy learner, self-taught, organised, detail-oriented.
     I take ownership and suggest improvements to workflows and processes.
+    I value communication, be it written, spoken and/or async (remote-first approach).
+    I have an "open source" attitude: write good documentation and code comments, share knowledge, collaborate to implement the best solutions.
     I try to keep up to date and experiment with new technologies.
 
-    My current stack is Python, Flask, PostgreSQL, AWS, Docker, Ansible, Celery, Redis, on both macOS and Linux.
-    In the past, I have worked with other languages (PHP, C#, C++, ASP.NET), databases (MySQL, MongoDB, Oracle, SQL Server, SQLite) and operating systems (Windows).
+    My current stack is Python, Flask, FastAPI, PostgreSQL, AWS, Docker, Kubernetes, Ansible, Celery, Redis, on both macOS and Linux.
+    In the past, I have worked with other languages (Kotlin, PHP, C#, C++, ASP.NET), databases (MySQL, MongoDB, Oracle, SQL Server, SQLite) and operating systems (Windows).
 skills:
   title: Current Skills &amp; Proficiency
 
@@ -78,7 +79,7 @@ skills:
       level: 80%
     - name: Celery, Redis
       level: 70%
-    - name: Pytest, TDD, Unit Tests
+    - name: pytest, TDD, Unit Tests
       level: 80%
     - name: Ansible
       level: 60%
@@ -103,11 +104,32 @@ projects:
     - title: Nitpick
       link: https://github.com/andreoliwa/nitpick
       tagline: >
-        A code quality tool to enforce the same configuration across multiple projects.
-        Written in Python. Uses git-flow, Travis for CI/CD and semantic-release for automated releases.
+        A code quality tool to enforce the same settings across multiple language-independent projects.
+        Written in Python. Uses git-flow, GitHub Actions for CI/CD and semantic-release for automated releases.
 
 experiences:
-  - role: Python / PHP / .NET Backend Engineer &amp; DevOps
+  - role: Python Backend Developer
+    time: Nov 2021 — present
+    company: Wolt
+    city: Berlin, Germany
+    details: |
+      - Worked in the Payments Group of this Finnish food delivery company (based in Helsinki)
+      - Implemented the backend integration of the Vipps payment method in Norway
+      - Improved the backend API for cash payments (used in 12 countries), replacing multiple Kafka topics
+        by a simpler Kafka setup, consuming events from a single topic, published by the Courier mobile app backend
+      - Python 3.9/3.10, FastAPI, PostgreSQL, Kafka, Docker, Kubernetes, Kotlin
+
+  - role: Python Backend Developer
+    time: Jun 2020 — Oct 2021
+    company: sennder
+    city: Berlin, Germany
+    details: |
+      - Logistics platform to connect customers with carriers in order to deliver cargo through FTL (full-truck loads)
+      - Collaborated on a project and system-wide change to allow multiple stops to truck routes
+      - Implemented automated solutions for the Finance department (invoicing, carrier debt emails, etc.)
+      - Python 3.7, Django REST API, FastAPI, Celery, Docker, Kubernetes
+
+  - role: Python / PHP / .NET Backend Developer &amp; DevOps
     time: Dec 2019 - Apr 2020
     company: EatFirst (acquired by B2B Food Group)
     city: Berlin, Germany
@@ -117,7 +139,7 @@ experiences:
       - Automated the install of a C#/ASP.NET application using Chocolatey and PowerShell scripts
       - Collaborated with the Product team using Jira and Confluence
 
-  - role: Python Backend Engineer &amp; DevOps
+  - role: Python Backend Developer &amp; DevOps
     time: Nov 2018 — Nov 2019
     company: EatFirst
     city: Berlin, Germany
@@ -129,7 +151,7 @@ experiences:
       - Upgraded the whole platform with the latest software, applying security updates and bug fixes
       - Standardized CI/CD using Jenkins Pipelines, showing a better output, making it easier to replay/rebuild jobs (Groovy)
 
-  - role: Python Backend Engineer
+  - role: Python Backend Developer
     time: Oct 2014 — Oct 2018
     company: EatFirst
     city: Berlin, Germany
@@ -158,7 +180,7 @@ experiences:
         - Participated in a collective effort to write the remaining web pages before the initial platform release
       - Collaborated with the team using Agile (Scrum/Kanban) with Trello
 
-  - role: PHP Backend Engineer
+  - role: PHP Backend Developer
     time: Aug, 2010 — Apr, 2014
     company: Folha de S.Paulo
     city: São Paulo, Brazil
@@ -178,7 +200,7 @@ experiences:
         - Integrated the hyphenation module into the ad capture app, reducing the price of the ads for the customers
       - Spearheaded the use of tools for code quality and coding standards: Code Sniffer, CI with Jenkins, design patterns
 
-  - role: Desktop Application Engineer
+  - role: Desktop Application Developer
     time: Jun, 2001 — Jul, 2010
     company: Folha de S.Paulo - Classifieds Department
     city: São Paulo, Brazil
@@ -226,7 +248,7 @@ education:
     details: |
       I attended university in a non tech-related field.
       It helped to open up my mind, think different and to see things from another point of view.
-  - degree: Technology Specialist / Software Engineer
+  - degree: Technology Specialist / Software Developer
     university: Federal Technical School of São Paulo (ETFSP/IFSP)
     # time: 1990 — 1993
     details: |
