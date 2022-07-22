@@ -13,7 +13,7 @@ sidebar:
 
   # Sidebar links
   email: andreoliwa@gmail.com
-  phone: +49 157 8451-8364
+#  phone: # remove phone because some recruiters are annoying
   timezone: Europe/Berlin timezone
   citizenship: Italian/Brazilian dual citizenship
   city: 10435 Berlin, Germany
@@ -117,7 +117,7 @@ experiences:
       - Implemented the backend integration of the Vipps payment method in Norway
       - Improved the backend API for cash payments (used in 12 countries), replacing multiple Kafka topics
         by a simpler Kafka setup, consuming events from a single topic, published by the Courier mobile app backend
-      - Python 3.9/3.10, FastAPI, PostgreSQL, Kafka, Docker, Kubernetes, Kotlin
+      - Python 3.9/3.10, FastAPI, PostgreSQL, Kafka, Docker, Kubernetes, Datadog, Grafana, Kotlin
 
   - role: Python Backend Developer
     time: Jun 2020 — Oct 2021
@@ -127,7 +127,7 @@ experiences:
       - Logistics platform to connect customers with carriers in order to deliver cargo through FTL (full-truck loads)
       - Collaborated on a project and system-wide change to allow multiple stops to truck routes
       - Implemented automated solutions for the Finance department (invoicing, carrier debt emails, etc.)
-      - Python 3.7, Django REST API, FastAPI, Celery, Docker, Kubernetes
+      - Python 3.7, Django REST API, FastAPI, Celery, Docker, Kubernetes, Datadog
 
   - role: Python / PHP / .NET Backend Developer &amp; DevOps
     time: Dec 2019 - Apr 2020
