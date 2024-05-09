@@ -9,11 +9,11 @@ sidebar:
   # Profile information
   name: Augusto Andreoli
   tagline: Python Backend Developer
-  avatar: profile.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  avatar: profile-long-hair-dark.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: andreoliwa@gmail.com
-#  phone: # remove phone because some recruiters are annoying
+  email: andreoli@sent.com
+  #  phone: # remove phone because some recruiters are annoying
   timezone: Europe/Berlin timezone
   citizenship: Italian/Brazilian dual citizenship
   city: 10435 Berlin, Germany
@@ -35,15 +35,15 @@ sidebar:
     - idiom: English
       level: C1
       image: english.jpg
-    - idiom: German
-      level: A2/B1
-      image: german.png
-    - idiom: Italian
-      level: B2
-      image: italian.jpg
     - idiom: Brazilian Portuguese
       level: Native
       image: brazilian-portuguese.jpg
+    - idiom: Italian
+      level: B2
+      image: italian.jpg
+    - idiom: German
+      level: A2/B1
+      image: german.png
 
   # interests:
   #   - item: Climbing
@@ -63,61 +63,61 @@ career-profile:
     I have an "open source" attitude: write good documentation and code comments, share knowledge, collaborate to implement the best solutions.
     I try to keep up to date and experiment with new technologies.
 
-    My current stack is Python, Flask, FastAPI, PostgreSQL, AWS, Docker, Kubernetes, Ansible, Celery, Redis, on both macOS and Linux.
-    In the past, I have worked with other languages (Kotlin, PHP, C#, C++, ASP.NET), databases (MySQL, MongoDB, Oracle, SQL Server, SQLite) and operating systems (Windows).
+    My current stack is Python, FastAPI/Flask, MongoDB, gRPC, PostgreSQL, AWS, Docker, Kubernetes, Ansible, Celery, Redis, on both macOS and Linux.
+    In the past, I have worked with other languages (Kotlin, PHP, C#, C++, ASP.NET), databases (MySQL, Oracle, SQL Server, SQLite) and operating systems (Windows).
 skills:
   title: Current Skills &amp; Proficiency
 
   toolset:
-    - name: Python 3, Flask, REST API
+    - name: Python 3, FastAPI/Flask, REST API
       level: 98%
-    - name: PostgreSQL
-      level: 98%
-    - name: Amazon AWS
-      level: 80%
-    - name: Docker
-      level: 80%
-    - name: Celery, Redis
-      level: 70%
     - name: pytest, TDD, Unit Tests
+      level: 90%
+    - name: MongoDB, PostgreSQL
       level: 80%
-    - name: Ansible
-      level: 60%
-    - name: Jenkins
+    - name: Docker/OrbStack
       level: 70%
-    - name: Git, GitHub
+    - name: Amazon AWS, Kubernetes
+      level: 60%
+    - name: Celery, Redis
+      level: 60%
+    - name: Git, GitHub, GitLab
       level: 98%
-    - name: Linux, Ubuntu, CentOS
+    - name: Linux, Ubuntu, macOS
       level: 80%
-    - name: Bash Scripting
+    - name: Bash/shell Scripting
       level: 80%
-    - name: Regular Expressions
-      level: 90%
     - name: Agile (Scrum, Kanban)
-      level: 90%
+      level: 80%
 
 projects:
   title: Projects
   # intro: >
-  #   You can list your side projects or open source libraries in this section.
+  #   Side projects and open source libraries.
   assignments:
     - title: Nitpick
       link: https://github.com/andreoliwa/nitpick
       tagline: >
         A code quality tool to enforce the same settings across multiple language-independent projects.
         Written in Python. Uses git-flow, GitHub Actions for CI/CD and semantic-release for automated releases.
+    - title: logseq-doctor
+      link: https://github.com/andreoliwa/logseq-doctor
+      tagline: >
+        Tools to work with Logseq Markdown files: convert to outline, list tasks, etc. Logseq is a privacy-first, open-source platform for knowledge management and note-taking.
 
 experiences:
   - role: Python Backend Developer
     time: Nov 2021 — present
-    company: Wolt
+    company: Wolt (Finnish food delivery company based in Helsinki, Finland)
     city: Berlin, Germany
     details: |
-      - Worked in the Payments Group of this Finnish food delivery company (based in Helsinki)
+      - Worked 1 year in the Payments Team, responsible for the cash, chargeback and fraud projects
+      - Now working in the Delivery as a Service (DaaS) Team: delivery service provided by Wolt to any kind of business (restaurants, shops, etc.)
       - Implemented the backend integration of the Vipps payment method in Norway
       - Improved the backend API for cash payments (used in 12 countries), replacing multiple Kafka topics
         by a simpler Kafka setup, consuming events from a single topic, published by the Courier mobile app backend
-      - Python 3.9/3.10, FastAPI, PostgreSQL, Kafka, Docker, Kubernetes, Datadog, Grafana, Kotlin
+      - Currently working in a peer-to-peer delivery project, allowing customers to deliver objects to other customers
+      - Python 3.9 to 3.12, FastAPI, MongoDB, gRPC, PostgreSQL, Kafka, Docker, Kubernetes, Datadog, Grafana, Kotlin,
 
   - role: Python Backend Developer
     time: Jun 2020 — Oct 2021
