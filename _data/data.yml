@@ -3,6 +3,7 @@
 #
 
 sidebar:
+  position: right # position of the sidebar : left or right
   about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
   education: False # set to False if you want education in main section instead of in sidebar
 
@@ -32,20 +33,24 @@ sidebar:
   pdf: # http://www.africau.edu/images/default/sample.pdf
 
   languages:
-    - idiom: English
-      level: C1
-      image: english.jpg
-    - idiom: Brazilian Portuguese
-      level: Native
-      image: brazilian-portuguese.jpg
-    - idiom: Italian
-      level: B2
-      image: italian.jpg
-    - idiom: German
-      level: A2/B1
-      image: german.png
+    title: Languages
+    info:
+      - idiom: English
+        level: C1
+        image: english.jpg
+      - idiom: Brazilian Portuguese
+        level: Native
+        image: brazilian-portuguese.jpg
+      - idiom: Italian
+        level: B2
+        image: italian.jpg
+      - idiom: German
+        level: A2/B1
+        image: german.png
 
   # interests:
+  #    title: Interests
+  #    info:
   #   - item: Climbing
   #     link:
   #   - item: Snowboarding
@@ -65,9 +70,9 @@ career-profile:
 
     My current stack is Python, FastAPI/Flask, MongoDB, gRPC, PostgreSQL, AWS, Docker, Kubernetes, Ansible, Celery, Redis, on both macOS and Linux.
     In the past, I have worked with other languages (Kotlin, PHP, C#, C++, ASP.NET), databases (MySQL, Oracle, SQL Server, SQLite) and operating systems (Windows).
+
 skills:
   title: Current Skills &amp; Proficiency
-
   toolset:
     - name: Python 3, FastAPI/Flask, REST API
       level: 98%
@@ -105,119 +110,181 @@ projects:
       tagline: >
         Tools to work with Logseq Markdown files: convert to outline, list tasks, etc. Logseq is a privacy-first, open-source platform for knowledge management and note-taking.
 
+# oss:
+#   title: OSS Contributions
+#   intro: >
+#     You can list your open source software contributions in this
+#     section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+#     Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+#   contributions:
+#     - title: Tempo
+#       link: "#"
+#       tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+#     - title: Atom
+#       link: "#"
+#       tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+#     - title: Delta
+#       link: "#"
+#       tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
 experiences:
-  - role: Python Backend Developer
-    time: Nov 2021 — present
-    company: Wolt (Finnish food delivery company based in Helsinki, Finland)
-    city: Berlin, Germany
-    details: |
-      - Worked 1 year in the Payments Team, responsible for the cash, chargeback and fraud projects
-      - Now working in the Delivery as a Service (DaaS) Team: delivery service provided by Wolt to any kind of business (restaurants, shops, etc.)
-      - Implemented the backend integration of the Vipps payment method in Norway
-      - Improved the backend API for cash payments (used in 12 countries), replacing multiple Kafka topics
-        by a simpler Kafka setup, consuming events from a single topic, published by the Courier mobile app backend
-      - Currently working in a peer-to-peer delivery project, allowing customers to deliver objects to other customers
-      - Python 3.9 to 3.12, FastAPI, MongoDB, gRPC, PostgreSQL, Kafka, Docker, Kubernetes, Datadog, Grafana, Kotlin,
+  title: Experiences
+  info:
+    - role: Python Backend Developer
+      time: Nov 2021 — present
+      company: Wolt (Finnish food delivery company based in Helsinki, Finland)
+      city: Berlin, Germany
+      details: |
+        - Worked 1 year in the Payments Team, responsible for the cash, chargeback and fraud projects
+        - Now working in the Delivery as a Service (DaaS) Team: delivery service provided by Wolt to any kind of business (restaurants, shops, etc.)
+        - Implemented the backend integration of the Vipps payment method in Norway
+        - Improved the backend API for cash payments (used in 12 countries), replacing multiple Kafka topics
+          by a simpler Kafka setup, consuming events from a single topic, published by the Courier mobile app backend
+        - Currently working in a peer-to-peer delivery project, allowing customers to deliver objects to other customers
+        - Python 3.9 to 3.12, FastAPI, MongoDB, gRPC, PostgreSQL, Kafka, Docker, Kubernetes, Datadog, Grafana, Kotlin,
 
-  - role: Python Backend Developer
-    time: Jun 2020 — Oct 2021
-    company: sennder
-    city: Berlin, Germany
-    details: |
-      - Logistics platform to connect customers with carriers in order to deliver cargo through FTL (full-truck loads)
-      - Collaborated on a project and system-wide change to allow multiple stops to truck routes
-      - Implemented automated solutions for the Finance department (invoicing, carrier debt emails, etc.)
-      - Python 3.7, Django REST API, FastAPI, Celery, Docker, Kubernetes, Datadog
+    - role: Python Backend Developer
+      time: Jun 2020 — Oct 2021
+      company: sennder
+      city: Berlin, Germany
+      details: |
+        - Logistics platform to connect customers with carriers in order to deliver cargo through FTL (full-truck loads)
+        - Collaborated on a project and system-wide change to allow multiple stops to truck routes
+        - Implemented automated solutions for the Finance department (invoicing, carrier debt emails, etc.)
+        - Python 3.7, Django REST API, FastAPI, Celery, Docker, Kubernetes, Datadog
 
-  - role: Python / PHP / .NET Backend Developer &amp; DevOps
-    time: Dec 2019 - Apr 2020
-    company: EatFirst (acquired by B2B Food Group)
-    city: Berlin, Germany
-    details: |
-      - Optimized the invoice adjustment tool (PHP): refactored the code to make it fail-safe and reliable
-      - Upgraded to Python 3.7 a SalesForce integration script written in Python 2: remodelled to run on Docker, improved SQL queries and overall performance/code quality
-      - Automated the install of a C#/ASP.NET application using Chocolatey and PowerShell scripts
-      - Collaborated with the Product team using Jira and Confluence
+    - role: Python / PHP / .NET Backend Developer &amp; DevOps
+      time: Dec 2019 - Apr 2020
+      company: EatFirst (acquired by B2B Food Group)
+      city: Berlin, Germany
+      details: |
+        - Optimized the invoice adjustment tool (PHP): refactored the code to make it fail-safe and reliable
+        - Upgraded to Python 3.7 a SalesForce integration script written in Python 2: remodelled to run on Docker, improved SQL queries and overall performance/code quality
+        - Automated the install of a C#/ASP.NET application using Chocolatey and PowerShell scripts
+        - Collaborated with the Product team using Jira and Confluence
 
-  - role: Python Backend Developer &amp; DevOps
-    time: Nov 2018 — Nov 2019
-    company: EatFirst
-    city: Berlin, Germany
-    details: |
-      - Created invoice PDF files with AWS Lambda, replacing manual invoices (Python, NodeJS)
-      - Accelerated the performance of the Data Warehouse/ETL tool by limiting the initial filter to the current month (BI with Pentaho)
-      - Maintained AWS infrastructure (EC2 servers, ECS Fargate containers, S3 buckets, ELB)
-      - Optimized and tuned the PostgreSQL database hosted on Amazon RDS, checking slow queries, deadlocks and indexes (AWS RDS)
-      - Upgraded the whole platform with the latest software, applying security updates and bug fixes
-      - Standardized CI/CD using Jenkins Pipelines, showing a better output, making it easier to replay/rebuild jobs (Groovy)
+    - role: Python Backend Developer &amp; DevOps
+      time: Nov 2018 — Nov 2019
+      company: EatFirst
+      city: Berlin, Germany
+      details: |
+        - Created invoice PDF files with AWS Lambda, replacing manual invoices (Python, NodeJS)
+        - Accelerated the performance of the Data Warehouse/ETL tool by limiting the initial filter to the current month (BI with Pentaho)
+        - Maintained AWS infrastructure (EC2 servers, ECS Fargate containers, S3 buckets, ELB)
+        - Optimized and tuned the PostgreSQL database hosted on Amazon RDS, checking slow queries, deadlocks and indexes (AWS RDS)
+        - Upgraded the whole platform with the latest software, applying security updates and bug fixes
+        - Standardized CI/CD using Jenkins Pipelines, showing a better output, making it easier to replay/rebuild jobs (Groovy)
 
-  - role: Python Backend Developer
-    time: Oct 2014 — Oct 2018
-    company: EatFirst
-    city: Berlin, Germany
-    details: |
-      - Built a Python RESTful API from scratch to replace a PHP application (Python 3.6, Flask, PostgreSQL 9.6, SQLAlchemy, Alembic)
-      - Streamlined asynchronous jobs using a distributed task queue (Celery 4, Redis)
-      - Shaped a flexible JSON API to be consumed by iOS, Android and web clients
-      - Conceived a reliable and fail-safe payment component
-        - Processed and refunded credit card, SEPA, PayPal and Apple Pay transactions via the Adyen payment gateway
-      - Introduced a comprehensive unit/integration test suite and Sentry monitoring, ensuring safe code changes
-      - Optimized an algorithm for the "travelling salesman problem" with Python and Google Maps/Matrix API
-        - Delivered orders to customers on pre-scheduled slots using the least number of drivers and the fastest route
-        - Assisted the operations team in London with driver routes simulation
-        - Increased efficiency of the delivery service, avoiding human mistakes in route calculation
-      - Developed store/shop/retailer selection by using the current GPS location
-        - Increased performance on geographical SQL queries (PostgreSQL, PostGIS)
-      - Composed email, SMS messages and automated phone calls using Mandrill, Mailchimp and Nexmo
-        - Facilitated marketing campaigns and strengthened customer communication channels
-      - Assembled dev tools to lint and assert proper typing and code quality (PyLint, flake8, MyPy)
-      - Conceptualized a multi-language application, prepared for expansion to other countries (Flask-Babel, Transifex)
-        - One of the first Berlin startups to display bilingual content in English and German to customers
-      - Remodelled container deployment to use ECS Fargate, a serverless technology (Docker, AWS ECS, AWS Fargate)
-        - Minimized costs with EC2 instances
-        - Allocated more containers automatically with auto-scaling when the app was not responding
-      - Designed front-end pages using a Flux-like architecture (Node.js, Riot, Backbone.js, Underscore.js)
-        - Participated in a collective effort to write the remaining web pages before the initial platform release
-      - Collaborated with the team using Agile (Scrum/Kanban) with Trello
+    - role: Python Backend Developer
+      time: Oct 2014 — Oct 2018
+      company: EatFirst
+      city: Berlin, Germany
+      details: |
+        - Built a Python RESTful API from scratch to replace a PHP application (Python 3.6, Flask, PostgreSQL 9.6, SQLAlchemy, Alembic)
+        - Streamlined asynchronous jobs using a distributed task queue (Celery 4, Redis)
+        - Shaped a flexible JSON API to be consumed by iOS, Android and web clients
+        - Conceived a reliable and fail-safe payment component
+          - Processed and refunded credit card, SEPA, PayPal and Apple Pay transactions via the Adyen payment gateway
+        - Introduced a comprehensive unit/integration test suite and Sentry monitoring, ensuring safe code changes
+        - Optimized an algorithm for the "travelling salesman problem" with Python and Google Maps/Matrix API
+          - Delivered orders to customers on pre-scheduled slots using the least number of drivers and the fastest route
+          - Assisted the operations team in London with driver routes simulation
+          - Increased efficiency of the delivery service, avoiding human mistakes in route calculation
+        - Developed store/shop/retailer selection by using the current GPS location
+          - Increased performance on geographical SQL queries (PostgreSQL, PostGIS)
+        - Composed email, SMS messages and automated phone calls using Mandrill, Mailchimp and Nexmo
+          - Facilitated marketing campaigns and strengthened customer communication channels
+        - Assembled dev tools to lint and assert proper typing and code quality (PyLint, flake8, MyPy)
+        - Conceptualized a multi-language application, prepared for expansion to other countries (Flask-Babel, Transifex)
+          - One of the first Berlin startups to display bilingual content in English and German to customers
+        - Remodelled container deployment to use ECS Fargate, a serverless technology (Docker, AWS ECS, AWS Fargate)
+          - Minimized costs with EC2 instances
+          - Allocated more containers automatically with auto-scaling when the app was not responding
+        - Designed front-end pages using a Flux-like architecture (Node.js, Riot, Backbone.js, Underscore.js)
+          - Participated in a collective effort to write the remaining web pages before the initial platform release
+        - Collaborated with the team using Agile (Scrum/Kanban) with Trello
 
-  - role: PHP Backend Developer
-    time: Aug, 2010 — Apr, 2014
-    company: Folha de S.Paulo
-    city: São Paulo, Brazil
-    details: |
-      - Collaborated on the proprietary PHP framework of the company, adding new core classes and improving existing ones
-        - Authored a hyphenation class for Portuguese words, used to split multiline text on classified ads
-        - Enhanced a class to deal with master/detail table data, facilitating the creation of admin interfaces
-        - Conceived a class to manipulate data trees, speeding up data retrieval without using slow recursion techniques
-      - Supported the migration of newspaper subscriptions from a desktop app (written in Oracle Forms) to a web app (PHP, MySQL)
-      - Participated on the Paywall project, limiting articles for readers: free access up to N stories per month; above that, only subscribers can read
-        - First newspaper in Brazil to use this technology in 2012, loosely based on what The New York Times has done in the USA
-        - Streamlined data processing to generate daily reports of visitor count and unique hits count (MongoDB, MySQL)
-        - Computed 5 million records per day and up to 90 million records per month
-      - Implemented a fast search for newspaper articles using a full-text search engine (Sphinx search)
-      - Guided the team during the migration of classified ads from a proprietary third-party desktop system (Windows, C++) to a web app (PHP, MySQL)
-        - Overhauled the credit card app, eliminating double charges and failures, saving company money and increasing customer satisfaction
-        - Integrated the hyphenation module into the ad capture app, reducing the price of the ads for the customers
-      - Spearheaded the use of tools for code quality and coding standards: Code Sniffer, CI with Jenkins, design patterns
+    - role: PHP Backend Developer
+      time: Aug, 2010 — Apr, 2014
+      company: Folha de S.Paulo
+      city: São Paulo, Brazil
+      details: |
+        - Collaborated on the proprietary PHP framework of the company, adding new core classes and improving existing ones
+          - Authored a hyphenation class for Portuguese words, used to split multiline text on classified ads
+          - Enhanced a class to deal with master/detail table data, facilitating the creation of admin interfaces
+          - Conceived a class to manipulate data trees, speeding up data retrieval without using slow recursion techniques
+        - Supported the migration of newspaper subscriptions from a desktop app (written in Oracle Forms) to a web app (PHP, MySQL)
+        - Participated on the Paywall project, limiting articles for readers: free access up to N stories per month; above that, only subscribers can read
+          - First newspaper in Brazil to use this technology in 2012, loosely based on what The New York Times has done in the USA
+          - Streamlined data processing to generate daily reports of visitor count and unique hits count (MongoDB, MySQL)
+          - Computed 5 million records per day and up to 90 million records per month
+        - Implemented a fast search for newspaper articles using a full-text search engine (Sphinx search)
+        - Guided the team during the migration of classified ads from a proprietary third-party desktop system (Windows, C++) to a web app (PHP, MySQL)
+          - Overhauled the credit card app, eliminating double charges and failures, saving company money and increasing customer satisfaction
+          - Integrated the hyphenation module into the ad capture app, reducing the price of the ads for the customers
+        - Spearheaded the use of tools for code quality and coding standards: Code Sniffer, CI with Jenkins, design patterns
 
-  - role: Desktop Application Developer
-    time: Jun, 2001 — Jul, 2010
-    company: Folha de S.Paulo - Classifieds Department
-    city: São Paulo, Brazil
-    details: |
-      - Redesigned the blacklist app, optimized PL/SQL queries and stored procedures, reducing execution time from hours to minutes
-      - Orchestrated the conversion of C++ and Visual Basic 6 desktop applications to C#
-      - Designed a C++ app to concentrate all the department reports, moving code from legacy VB6 apps
-        - Generated output in different formats: Excel sheets, text files or e-mail
-        - Connected to different databases: Oracle 11g/10g/9i, Microsoft SQL Server 2005/2000
-      - Published a C# Windows Service to update the bookstore marketplace inventory, using XML files to transfer data
-      - Created C# class libraries, OLE/ActiveX/OCX components
-        - Initiated a C# shared class library, serving as a base for an internal framework
-        - Developed an OLE C++ 1.52 component interfacing with a third-party 16-bit DLL, enabling it to be used by a VB6 32-bit app
-      - Led the migration of version control from Microsoft SourceSafe to Subversion
-      - Maintained standalone Visual Basic 6 applications that interfaced with the third-party classified ads C++ app
-      - Produced application setup executables for standalone VB6 apps using NSIS (Nullsoft Scriptable Install System)
-      - Documented internal technical articles and how-tos with Drupal CMS, after trying Joomla and Wordpress (PHP)
+    - role: Desktop Application Developer
+      time: Jun, 2001 — Jul, 2010
+      company: Folha de S.Paulo - Classifieds Department
+      city: São Paulo, Brazil
+      details: |
+        - Redesigned the blacklist app, optimized PL/SQL queries and stored procedures, reducing execution time from hours to minutes
+        - Orchestrated the conversion of C++ and Visual Basic 6 desktop applications to C#
+        - Designed a C++ app to concentrate all the department reports, moving code from legacy VB6 apps
+          - Generated output in different formats: Excel sheets, text files or e-mail
+          - Connected to different databases: Oracle 11g/10g/9i, Microsoft SQL Server 2005/2000
+        - Published a C# Windows Service to update the bookstore marketplace inventory, using XML files to transfer data
+        - Created C# class libraries, OLE/ActiveX/OCX components
+          - Initiated a C# shared class library, serving as a base for an internal framework
+          - Developed an OLE C++ 1.52 component interfacing with a third-party 16-bit DLL, enabling it to be used by a VB6 32-bit app
+        - Led the migration of version control from Microsoft SourceSafe to Subversion
+        - Maintained standalone Visual Basic 6 applications that interfaced with the third-party classified ads C++ app
+        - Produced application setup executables for standalone VB6 apps using NSIS (Nullsoft Scriptable Install System)
+        - Documented internal technical articles and how-tos with Drupal CMS, after trying Joomla and Wordpress (PHP)
+
+# certifications:
+#   title: Certifications
+#   list:
+#     - name: CV Builder
+#       start: 2020
+#       end: 2021
+#       organization: Microsoft
+#       credentialid: 111-222
+#       credentialurl: www.google.com
+#       credentialname: Google
+#       details: |
+#         Details about cert. Lorem ipsum dolor sit amet, consectetur
+#         adipiscing elit.
+#         Nullam eget orci purus. Nullam ultrices neque nibh.
+#         Aenean fermentum, felis vulputate suscipit accumsan,
+#         sem enim bibendum augue, sed convallis arcu lacus at dui.
+#         Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+#         Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+#         Praesent venenatis erat non augue suscipit consectetur.
+
+#         Second paragraph. Sed eleifend enim ante, vitae efficitur purus
+#         fringilla vel. Ut euismod, sem sed vulputate venenatis,
+#         justo diam viverra velit, sed rhoncus leo leo eu justo.
+#         Suspendisse placerat risus ante, sed porta nisi blandit at.
+#     - name: Git learning
+#       start: 2019
+#       end:
+#       organization: Microsoft
+#       credentialid: 111-222
+#       credentialurl: www.github.com
+#       credentialname: Github
+#       details: |
+#         Older certification. Lorem ipsum dolor sit amet, consectetur
+#         adipiscing elit.
+#         Nullam eget orci purus. Nullam ultrices neque nibh.
+#         Aenean fermentum, felis vulputate suscipit accumsan,
+#         sem enim bibendum augue, sed convallis arcu lacus at dui.
+#         Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+#         Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+#         Praesent venenatis erat non augue suscipit consectetur.
 
 # publications:
 #   title: Publications
@@ -242,20 +309,22 @@ experiences:
 #       conference: "Comm. ACM 4 (1961), 51–55"
 
 education:
-  - degree: Bachelor Degree - Psychology (incomplete)
-    university: USP - University of São Paulo
-    # time: 1995 — 1996
-    details: |
-      I attended university in a non tech-related field.
-      It helped to open up my mind, think different and to see things from another point of view.
-  - degree: Technology Specialist / Software Developer
-    university: Federal Technical School of São Paulo (ETFSP/IFSP)
-    # time: 1990 — 1993
-    details: |
-      Vocational school in which I learned sofware development techniques and a few programming languages:
-      - C, C++ and Pascal languages, Object-Oriented Programming
-      - Relational databases
-      - Scope definition, requirements analysis, logical design, UML diagrams
+  title: Education
+  info:
+    - degree: Bachelor Degree - Psychology (incomplete)
+      university: USP - University of São Paulo
+      # time: 1995 — 1996
+      details: |
+        I attended university in a non tech-related field.
+        It helped to open up my mind, think different and to see things from another point of view.
+    - degree: Technology Specialist / Software Developer
+      university: Federal Technical School of São Paulo (ETFSP/IFSP)
+      # time: 1990 — 1993
+      details: |
+        Vocational school in which I learned sofware development techniques and a few programming languages:
+        - C, C++ and Pascal languages, Object-Oriented Programming
+        - Relational databases
+        - Scope definition, requirements analysis, logical design, UML diagrams
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

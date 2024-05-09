@@ -3,11 +3,11 @@
 <div class="languages-container container-block">
 
   <h2 class="container-block-title">
-    Languages
+    {{ languages.title }}
   </h2>
 
   <ul class="list-unstyled interests-list">
-    {%for language in languages %}
+    {% for language in languages.info %}
     <li>
       <img src="{{ site.baseurl }}/assets/images/{{ language.image }}" alt="{{ language.idiom }}" width="25px" height="17px" />
       &nbsp;{{ language.idiom }}
