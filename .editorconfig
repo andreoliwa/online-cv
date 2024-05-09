@@ -22,3 +22,9 @@ insert_final_newline = false
 
 [Makefile]
 indent_style = tab
+
+[*.{bat,cmd,ps1}]
+end_of_line = crlf
+
+[*.{js,json,json5,yml,yaml,md,rb}]
+indent_size = 2

@@ -1,0 +1,7 @@
+plugins:
+  editorconfig:
+    enabled: true
+  markdownlint:
+    enabled: false
+  shellcheck:
+    enabled: true
