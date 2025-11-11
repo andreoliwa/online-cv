@@ -61,25 +61,28 @@ sidebar:
 career-profile:
   title: Summary
   summary: |
-    I’m a backend developer with over 10 years of experience in software development: web development, RESTful APIs, object-oriented design, database modelling...
+    I’m a backend developer with over 10 years of experience in software development: web, APIs, data modeling.
     I'm an easy learner, self-taught, organised, detail-oriented.
     I take ownership and suggest improvements to workflows and processes.
     I value communication, be it written, spoken and/or async (remote-first approach).
     I have an "open source" attitude: write good documentation and code comments, share knowledge, collaborate to implement the best solutions.
-    I try to keep up to date and experiment with new technologies.
+    I try to keep up-to-date and experiment with new technologies.
+    Leveraging AI tools in my daily work is a constant learning experience.
 
-    My current stack is Python, FastAPI/Flask, MongoDB, gRPC, PostgreSQL, AWS, Docker, Kubernetes, Ansible, Celery, Redis, on both macOS and Linux.
+    My current stack is Golang, Python, FastAPI/Flask, MongoDB, gRPC, PostgreSQL, AWS, Docker, Kubernetes, Ansible, Celery, Redis, on both macOS and Linux.
     In the past, I have worked with other languages (Kotlin, PHP, C#, C++, ASP.NET), databases (MySQL, Oracle, SQL Server, SQLite) and operating systems (Windows).
 
 skills:
   title: Current Skills &amp; Proficiency
   toolset:
-    - name: Python 3, FastAPI/Flask, REST API
-      level: 98%
-    - name: pytest, TDD, Unit Tests
-      level: 90%
-    - name: MongoDB, PostgreSQL
+    - name: Golang
       level: 80%
+    - name: Python 3, FastAPI/Flask, REST API
+      level: 90%
+    - name: pytest, TDD, Unit Tests
+      level: 80%
+    - name: MongoDB, PostgreSQL
+      level: 70%
     - name: Docker/OrbStack
       level: 70%
     - name: Amazon AWS, Kubernetes
@@ -94,6 +97,8 @@ skills:
       level: 80%
     - name: Agile (Scrum, Kanban)
       level: 80%
+    - name: Rust
+      level: 30%
 
 projects:
   title: Projects
@@ -132,8 +137,16 @@ projects:
 experiences:
   title: Experiences
   info:
+    - role: Golang Backend Developer
+      time: Feb 2025 — present
+      company: DoorDash/Wolt (acquired by DoorDash)
+      city: Berlin, Germany
+      details: |
+        - Working in the Merchant Data Hub (MDH) team, which owns the indexing and serving components of the Pedregal Atlas system. This product aims to deliver merchant data (offers, stores, selections, categories,, option groups, options) from both DoorDash & Wolt at scale to reliably secure the future of our platform.
+        - Golang, gRPC, Graph Runner (Kubernetes), Taulu (Cassandra)
+
     - role: Python Backend Developer
-      time: Nov 2021 — present
+      time: Nov 2021 — Jan 2025
       company: Wolt (Finnish food delivery company based in Helsinki, Finland)
       city: Berlin, Germany
       details: |
@@ -142,7 +155,7 @@ experiences:
         - Implemented the backend integration of the Vipps payment method in Norway
         - Improved the backend API for cash payments (used in 12 countries), replacing multiple Kafka topics
           by a simpler Kafka setup, consuming events from a single topic, published by the Courier mobile app backend
-        - Currently working in a peer-to-peer delivery project, allowing customers to deliver objects to other customers
+        - Worked in the "Packages" product (peer-to-peer delivery), allowing customers to deliver items to other customers
         - Python 3.9 to 3.12, FastAPI, MongoDB, gRPC, PostgreSQL, Kafka, Docker, Kubernetes, Datadog, Grafana, Kotlin,
 
     - role: Python Backend Developer
