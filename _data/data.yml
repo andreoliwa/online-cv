@@ -69,31 +69,27 @@ career-profile:
     I try to keep up-to-date and experiment with new technologies.
     Leveraging AI tools in my daily work is a constant learning experience.
 
-    My current stack is Golang, Python, FastAPI/Flask, MongoDB, gRPC, PostgreSQL, AWS, Docker, Kubernetes, Ansible, Celery, Redis, on both macOS and Linux.
+    My current stack is Go, Python, FastAPI, gRPC, Protobuf, Kafka, PostgreSQL, MongoDB, Docker, Kubernetes, Bazel, Datadog, Grafana, on both macOS and Linux.
     In the past, I have worked with other languages (Kotlin, PHP, C#, C++, ASP.NET), databases (MySQL, Oracle, SQL Server, SQLite) and operating systems (Windows).
 
 skills:
   title: Current Skills &amp; Proficiency
   toolset:
-    - name: Golang
-      level: 80%
-    - name: Python 3, FastAPI/Flask, REST API
+    - name: Go (Golang), gRPC, Protobuf
+      level: 85%
+    - name: Python 3, FastAPI, REST API
       level: 90%
-    - name: pytest, TDD, Unit Tests
-      level: 80%
-    - name: MongoDB, PostgreSQL
+    - name: Kafka, Event-driven architecture
+      level: 75%
+    - name: PostgreSQL, MongoDB, Cassandra
       level: 70%
-    - name: Docker/OrbStack
+    - name: Docker, Kubernetes, Bazel
+      level: 75%
+    - name: Datadog, Grafana, Observability
       level: 70%
-    - name: Amazon AWS, Kubernetes
-      level: 60%
-    - name: Celery, Redis
-      level: 60%
     - name: Git, GitHub, GitLab
       level: 98%
-    - name: Linux, Ubuntu, macOS
-      level: 80%
-    - name: Bash/shell Scripting
+    - name: Linux, macOS, Bash/shell scripting
       level: 80%
     - name: Agile (Scrum, Kanban)
       level: 80%
@@ -137,26 +133,42 @@ projects:
 experiences:
   title: Experiences
   info:
-    - role: Golang Backend Developer
+    - role: Golang Backend Developer — Merchant Data Hub (MDH) Team
       time: Feb 2025 — present
       company: DoorDash/Wolt (acquired by DoorDash)
       city: Berlin, Germany
       details: |
-        - Working in the Merchant Data Hub (MDH) team, which owns the indexing and serving components of the Pedregal Atlas system. This product aims to deliver merchant data (offers, stores, selections, categories,, option groups, options) from both DoorDash & Wolt at scale to reliably secure the future of our platform.
-        - Golang, gRPC, Graph Runner (Kubernetes), Taulu (Cassandra)
+        Working on the Pedregal Atlas system, which indexes and serves merchant data (offers, stores,
+        categories, option groups, options) from both DoorDash and Wolt at scale.
+        - Built a code generator (Go + Protobuf) that auto-generates boilerplate for all MDH entities
+        - Implemented gRPC ingestion endpoints for Wolt and DoorDash event streams (Kafka, Event Bus)
+        - Built indexing materialization nodes and serving repositories (Taulu/Cassandra)
+        - Migrated codebase from PRN v1 to PDRN v2; implemented entity embeddings and resolver DSL migration
+        - Improved observability: alerts, latency monitors, deployment notifications
+        - Golang, gRPC, Graph Runner (Kubernetes), Taulu (Cassandra), Protobuf, Bazel, Kafka, Datadog, Grafana
 
-    - role: Python Backend Developer
-      time: Nov 2021 — Jan 2025
-      company: Wolt (Finnish food delivery company based in Helsinki, Finland)
+    - role: Python Backend Developer — Wolt Drive
+      time: Feb 2023 — Jan 2025
+      company: Wolt
       city: Berlin, Germany
       details: |
-        - Worked 1 year in the Payments Team, responsible for the cash, chargeback and fraud projects
-        - Now working in the Delivery as a Service (DaaS) Team: delivery service provided by Wolt to any kind of business (restaurants, shops, etc.)
-        - Implemented the backend integration of the Vipps payment method in Norway
-        - Improved the backend API for cash payments (used in 12 countries), replacing multiple Kafka topics
-          by a simpler Kafka setup, consuming events from a single topic, published by the Courier mobile app backend
-        - Worked in the "Packages" product (peer-to-peer delivery), allowing customers to deliver items to other customers
-        - Python 3.9 to 3.12, FastAPI, MongoDB, gRPC, PostgreSQL, Kafka, Docker, Kubernetes, Datadog, Grafana, Kotlin,
+        Working on Delivery as a Service (DaaS/Wolt Drive), Wolt's white-label delivery platform for external businesses
+        (restaurants, retailers, logistics clients) across multiple countries.
+        - Led backend development of the Packages (P2P) product: peer-to-peer parcel delivery, from design to launch
+        - Built P2P endpoints (ETA, onboarding, checkout, purchase) with pricing, discounts, tipping, and translations
+        - Migrated DaaS gRPC API from v1beta1 to v1 across 10+ downstream services
+        - Delivered Time Slot Orders (TSO) pilot and Intercom support flag per merchant
+        - Python 3.10–3.12, FastAPI, MongoDB, gRPC, PostgreSQL, Celery, Docker, Kubernetes, Datadog, Grafana
+
+    - role: Python Backend Developer — Payments Tooling Team
+      time: Nov 2021 — Jan 2023
+      company: Wolt
+      city: Berlin, Germany
+      details: |
+        - Integrated the Vipps payment gateway (Norway): authorization, capture, and cancellation flows
+        - Implemented GooglePay token decryption and chargeback webhook handling (Finaro/Credorax)
+        - Maintained cash payment infrastructure; improved observability and developer tooling
+        - Python 3.9–3.10, FastAPI, PostgreSQL, SQLAlchemy, Alembic, Kafka, Docker, Kubernetes, Sentry, Datadog
 
     - role: Python Backend Developer
       time: Jun 2020 — Oct 2021
